@@ -2,7 +2,7 @@ function cozinhar(item, tempo) {
   return new Promise((resolve) => {
     setTimeout(() => {
       console.log(`Preparando ${item}`);
-      resolve({ item: item, tempo: tempo });
+      resolve({ 'item': item, 'tempo': tempo });
     }, tempo);
   });
 }
@@ -15,7 +15,7 @@ async function cozinharEmSerie() {
   console.log(`Tempo para cozinhar em série: ${Date.now() - init}`);
 }
 
-cozinharEmSerie();
+//cozinharEmSerie();
 
 async function cozinharEmParalelo() {
   const init = Date.now();
