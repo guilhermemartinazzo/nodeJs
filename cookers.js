@@ -9,9 +9,9 @@ function cozinhar(item, tempo) {
 
 async function cozinharEmSerie() {
   const init = Date.now();
-  const ovos = await cozinhar("Ovos mexidos", 2000);
-  const bacon = await cozinhar("Bacon", 1000);
-  const cafe = await cozinhar("Café", 3000);
+  const cozinheiro1 = await cozinhar("Ovos mexidos", 2000);
+  const cozinheiro2 = await cozinhar("Bacon", 1000);
+  const cozinheiro3 = await cozinhar("Café", 3000);
   console.log(`Tempo para cozinhar em série: ${Date.now() - init}`);
 }
 
