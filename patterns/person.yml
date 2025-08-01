@@ -1,0 +1,11 @@
+person:
+  nome: "João da Silva"
+  idade: 30
+  itens:
+    item:
+      nome: "Item 1"
+      quantidade: 1
+    item:
+      nome: "Item 2"
+      quantidade: 2
+  

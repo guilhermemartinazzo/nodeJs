@@ -1,0 +1,17 @@
+{
+    "pessoa": {
+        "id": 1,
+        "nome": "Nome da pessoa",
+        "idade": 50,
+        "itens": [
+            {
+                "item": "Item 1",
+                "quantidade": 1
+            },
+            {
+                "item": "Item 2",
+                "quantidade": 10
+            }
+        ]
+    }
+}

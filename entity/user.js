@@ -1,3 +1,5 @@
+import * as utils from "../utils/utils.js";
+console.log (utils.calcularIMC(80,1.77));
 class User {
   id;
   nome;
@@ -29,3 +31,4 @@ const usuario = new User(
   "guilhermemartinazzo@hotmail.com",
   "senha"
 );
+console.log(utils.toJson(usuario));

@@ -1,0 +1,20 @@
+<pessoa>
+    <nome>Fulano</nome>
+    <valorTotal>10</valorTotal>
+    <idade>30</idade>
+    <cidade>São Paulo</cidade>
+    <itens>
+        <item>
+            <nome>Andador</nome>
+            <quantidade>2</quantidade>
+        </item>
+        <item>
+            <nome>Mamadeira</nome>
+            <quantidade>10</quantidade>
+        </item>
+        <item>
+            <nome>Lenço umedecido</nome>
+            <quantidade>5</quantidade>
+        </item>
+    </itens>
+</pessoa>
