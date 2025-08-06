@@ -9,15 +9,24 @@ const categorias = [
   category.createCategory(2, "Vestuário"),
   category.createCategory(4, "Informática"),
 ];
-
+const key = "1234";
 const carts = [
   cart.createCart(1, 500, 1),
   cart.createCart(2, 600, 1),
   cart.createCart(3, 700, 1),
 ];
+
+function authenticate(req, res, next) {
+  let keyProvided = req.headers["authorization"];
+  if (key == keyProvided) {
+    next();
+  } else {
+    res.status(401).json({ error: "Invalid access key" });
+  }
+}
 const app = express();
 app.use(cors());
-app.get("/categories", (req, res) => {
+app.get("/categories", authenticate, (req, res) => {
   let params = req.params;
   categorias.sort((a, b) => {
     return a.id - b.id;
